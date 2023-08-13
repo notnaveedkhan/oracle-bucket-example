@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group = 'dev.naveedkhan'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.oracle.oci.sdk:oci-java-sdk-addons-resteasy-client-configurator:3.23.0'
+    implementation 'com.oracle.oci.sdk:oci-java-sdk-objectstorage:3.23.0'
+    implementation 'com.oracle.oci.sdk:oci-java-sdk-common-httpclient-jersey:3.23.0'
+    implementation 'com.oracle.oci.sdk:oci-java-sdk-bom:3.23.0'
+}
+
+test {
+    useJUnitPlatform()
+}
